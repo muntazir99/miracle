@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MIRACLE</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>MIRACLE</h1>
+    <p>WELCOME TO MIRACLE,<br>HOW ARE YOU FEELING TODAY?</p>
+    <div class="input-wrapper">
+      <div class="yellow-box">
+        <form action="{{ url_for('quote') }}" method="POST" class="mt-3"">
+          <div class="form-group">
+        <input type="text" name="feeling" class="styled-input" placeholder="ENTER YOUR FEELING..." required>
+        </div>
+      </div>
+    </div>
+    <button type="submit">ENTER</button>
+    <!-- <button>ENTER</button> -->
+  </div>
+</body>
+</html>
